@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>aspnet-TMDT-925C0514-A61A-4609-8055-F418E5F89B7B</UserSecretsId>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TMDT.Application\TMDT.Application.csproj" />
+    <ProjectReference Include="..\TMDT.Data.EF\TMDT.Data.EF.csproj" />
+    <ProjectReference Include="..\TMDT.Data\TMDT.Data.csproj" />
+    <ProjectReference Include="..\TMDT.Infrastructure\TMDT.Infrastructure.csproj" />
+    <ProjectReference Include="..\TMDT.Utilities\TMDT.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>

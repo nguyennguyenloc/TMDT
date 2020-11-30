@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Configurations\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TMDT.Data\TMDT.Data.csproj" />
+    <ProjectReference Include="..\TMDT.Infrastructure\TMDT.Infrastructure.csproj" />
+    <ProjectReference Include="..\TMDT.Utilities\TMDT.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
